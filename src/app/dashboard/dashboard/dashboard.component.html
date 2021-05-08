@@ -1,0 +1,6 @@
+<div class="grid grid-pad">
+  <app-dashboard-hero *ngFor="let hero of (heros$ |async)" [hero]="hero" (selected)="gotoDetail($event)"  class="col-1-4"></app-dashboard-hero>
+
+</div>
+
+
